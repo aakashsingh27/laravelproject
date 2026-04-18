@@ -163,7 +163,7 @@
                     </p>
                     <div class="d-flex justify-content-between align-items-center mt-4">
                         <strong>$70k - $88k</strong>
-                        <a href="#" class="text-decoration-none fw-semibold text-info">View role</a>
+                        <a href="{{@route('jobDetails')}}" class="text-decoration-none fw-semibold text-info">View role</a>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,7 @@
                     </p>
                     <div class="d-flex justify-content-between align-items-center mt-4">
                         <strong>$95k - $132k</strong>
-                        <a href="#" class="text-decoration-none fw-semibold text-info">View role</a>
+                        <a href="{{@route('jobDetails')}}" class="text-decoration-none fw-semibold text-info">View role</a>
                     </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@
                     </p>
                     <div class="d-flex justify-content-between align-items-center mt-4">
                         <strong>$82k - $108k</strong>
-                        <a href="#" class="text-decoration-none fw-semibold text-info">View role</a>
+                        <a href="{{@route('jobDetails')}}" class="text-decoration-none fw-semibold text-info">View role</a>
                     </div>
                 </div>
             </div>

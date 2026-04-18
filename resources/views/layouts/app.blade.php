@@ -281,15 +281,36 @@
                 min-height: 20rem;
             }
         }
-    </style>
+        /* Placeholder white color */
+        ::placeholder {
+            color: #b8b4b4 !important;
+            opacity: 1; /* full white */
+        }
+
+        /* For better browser support */
+        ::-webkit-input-placeholder { color: #b8b4b4; }
+        :-ms-input-placeholder { color: #b8b4b4; }
+        ::placeholder { color: #b8b4b4; }
+
+
+                /* Hover effect like real job portals */
+        .job-item {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .job-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+</style>
 </head>
 <body>
     <header class="site-header">
-    <div class="container py-2">
+     <div class="container py-2">
         <nav class="navbar navbar-expand-lg navbar-dark p-0">
             
             <!-- Brand -->
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="{{@route('home')}}">
                 <span class="brand-mark font-display fw-bold">OH</span>
                 <div>
                     <div class="font-display fw-bold text-white">OrbitHire</div>
@@ -313,7 +334,7 @@
                         <a class="nav-link nav-link-custom" href="#">Discover</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="#">Remote Jobs</a>
+                        <a class="nav-link nav-link-custom" href="{{@route('jobPage')}}">Remote Jobs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-custom" href="#">Companies</a>
@@ -337,7 +358,7 @@
 
             </div>
         </nav>
-    </div>
+     </div>
 </header>
 
     <main class="shell py-4 py-lg-5">
